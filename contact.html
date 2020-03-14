@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>AJN Figurines</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <main>
+
+        <header id="header">
+            <div class="logo"><img src="images/logo.png" class="logo" alt="logo montagne japon tour eiffel" /> </div>
+            <nav>
+                <div class="liens1">
+                    <i class="fa fa-home" aria-hidden="true"></i><a href="accueil.html">ACCUEIL</a>
+                    <!-- <i class="fa fa-search" target="_blank" aria-hidden="true"></i><a href="#recherche">RECHERCHE</a> -->
+                    <i class="fa fa-search" aria-hidden="true"></i><input type="text" placeholder="Recherche" name="Recherche">
+                    <i class="fa fa-shopping-bag" aria-hidden="true"></i><a href="shop.html">SHOP</a>
+                    </div>
+                    
+                    <div class="liens2">
+                    <i class="fa fa-id-card" aria-hidden="true"></i><a href="contact.html">CONTACT</a>
+                    <i class="fa fa-shopping-basket" aria-hidden="true"></i><a href="#monpanier">Mon Panier</a>
+                    <i class="fa fa-user" aria-hidden="true"></i><a href="moncompte">Mon compte</a>
+                    </div>
+    
+                <div class="flag">
+                    <ul>
+                        <li><img src="images/fr.png" alt="drapeau france" /></li>
+                        <li><img src="images/ja.png" alt="drapeau japon" /></li>
+                        <li><img src="images/en.png" alt="drapeau angleterre" /></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <div id="content">
+            <div class="bord"></div>
+
+            <div id="contact"><form method="post" action="contact">
+                <fieldset>
+                    <legend>
+                        <h2>CONTACT</h2>
+                    </legend>
+                    <p><label>Nom</label> <input type="text" name="nom"/></p>
+                    <p><label>Prénom</label> <input type="text" name="prénom"/></p>
+                    <p><label>Email</label> <input type="text" name="Email"/></p>
+                    <p><label>Numéro de commande</label> <input type="text" name="Ncommande"/></p>
+                    <label for="motif">Motif</label>
+                    <select name="motif" id="motif">
+                        <option value="problèmes">Problèmes avec ma commande</option>
+                        <option value="remboursement">Remboursement de ma commade</option>
+                        <option value="recu">Je n'ai pas reçu ma commande</option>
+                        <option value="annule">Je souhaite annulé ma commande</option>
+                        <option value="abime">J'ai reçu ma commande mais le produit est abîmé</option>
+                        <option value="casse">J'ai reçu ma commande mais le produit est cassé</option>
+                    </select>
+                    <p><label for="message">Message</label><textarea name="message" class="message" rows="5"></textarea></p>
+                    <div class="flex">
+                        <input type="submit" id="cancel" value="Annuler" /> <input type="submit" id="submit" value="Envoyer" />
+                    </div>
+                </fieldset>
+            </form></div>
+
+            <div class="bord"></div>
+        </div>
+
+        <footer id="footer">
+            <div class="box">
+                <div><a href="loremipsum.html" target="_blank">Conditions Générales de Vente</a></div>
+                <div><a href="loremipsum.html" target="_blank">Mentions légales</a></div>
+                <div><a href="loremipsum.html" target="_blank">Où nous trouver</a></div>
+                <div><a href="contact.html" target="_blank">Contactez-nous</a></div>
+                <div class="paiement">
+                    Moyens paiement
+                    <ul>
+                        <li>Virement</li>
+                        <li>CB</li>
+                        <li>Paypal</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">&#169 AJN Figurines</div>
+        </footer>
+
+    </main>
+    <script src="main.js"></script>
+</body>
+
+</html>

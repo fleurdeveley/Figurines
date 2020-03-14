@@ -1,0 +1,210 @@
+/* début header */
+header{
+    background-color: #9a1921;
+    font-family: 'moykoregular', Arial, serif;
+    font-size: 1.3em;
+    padding-top: 40px;
+    height: 100px;
+    text-align: center;
+}
+
+header a, footer a{
+    color: white;
+    z-index: 1;
+    text-decoration: none;
+}
+
+span{
+    font-family: 'moykoregular', Arial, serif; 
+}
+
+/* recherche */
+.liens1 input[type=text] {
+    background: #9a1921;
+    font-family: 'moykoregular', Arial, serif;
+    color: white;
+    font-size: 1.2em;
+    border: 1px solid #9a1921;
+    border-bottom: 1px solid black;
+    width: 120px;
+  }
+
+::placeholder{
+    background: #9a1921;
+    color: white;
+}
+/* fin recherche */
+
+.liens1, .liens2{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.liens2{
+    margin-right: 50px;
+}
+
+.liens1{
+    margin-left: 50px;
+}
+
+i{
+   margin-right: -60px;
+}
+
+.logo{
+    position: absolute;
+    z-index: 1;
+    left: 300px;
+    top: 15px;
+}
+
+.flag{
+    position:absolute;
+    top: 30px;
+    right: 25px;
+    font-size: 1.3em;
+}
+/* fin header */
+
+/* début content */
+#content{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.bord{
+    background-image: url("images/bord.png");
+    background-repeat: repeat;
+    background-attachment: fixed;
+    width: 10%;
+    height: auto;
+}
+/* fin content */
+
+/* début carousel */
+
+
+/* fin carousel */
+
+/* début home */
+.vignette, .vignette1, .vignette2, .vignette3, .vignette4{ /* home & shop*/
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+/* fin home */
+
+/* début home & shop*/
+figcaption{
+    font-weight: bold;
+    position: relative;
+    top: 10px;
+    text-align: center;
+}
+
+figcaption p{
+    color: red;
+}
+
+.order{ 
+    background: #9a1921;
+    color: white;
+    font-family: 'montserratlight';
+    position: relative;
+    top: 10px;
+    text-align: center;
+    left: 17px;
+    padding: 5px;
+}
+
+h3{
+    background: rgb(196, 193, 193);
+    font-size: 1.5em;
+    text-align: center;
+    padding: 5px 0;
+}
+/* fin home & shop*/
+
+/* début contact */
+.flex{
+    display: flex;
+    justify-content: space-around;
+}
+
+label{
+    display: block;
+}
+
+#contact input[type="text"], #motif, .message{
+    display: block;
+    width: 100%;
+    font-family: 'montserratlight';
+}
+#cancel, #submit{
+    background: black;
+}
+
+input[type="submit"]{
+    color: white;
+    font-family: 'montserratlight';
+    padding: 10px;
+}
+
+form{
+    padding-bottom: 3px;
+}
+/* fin contact */
+
+/* début footer */
+footer{
+    background: black;
+    font-family: 'moykoregular', Arial, serif;
+    font-size: 1.1em;
+    color: white;
+    padding: 15px;
+}
+
+ul{
+    color: white;
+    list-style-type: none;
+    margin: 0;
+    padding: 5px 5px;
+}
+
+.copyright{
+    text-align: center;
+    padding: 5px 0;
+}
+/* fin footer */
+
+.nav, .box{ /* header & footer */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between ;
+    flex-wrap: nowrap;
+}
+
+#home, #contact, #shop, #loremipsum{ /* home & shop & contact & footer(mentions légales, conditions générales, où nous trouver)*/
+    width: 80%;
+    padding: 5px;
+    font-family: 'montserratlight';
+}
+
+@font-face { /* police caractère du site */
+    font-family: 'montserratlight';
+    src: url('montserrat-light-webfont.woff2') format('woff2'),
+         url('montserrat-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face { /* police caractère (header & footer) */
+    font-family: 'moykoregular';
+    src: url('moyko-webfont.woff2') format('woff2'),
+         url('moyko-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
